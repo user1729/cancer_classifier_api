@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # Load model at startup
-classifier = CancerClassifier("models/fine_tuned")
+classifier = CancerClassifier("user1729/BiomedBERT-cancer-classifier-v1.0")
 
 
 @app.post("/predict", response_model=PredictionResponse)
